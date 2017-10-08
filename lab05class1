@@ -1,0 +1,70 @@
+public class Pair{
+private double a;
+private  double b;
+private double sum;
+private double dif;
+private double prod;
+private double avg;
+private double pos;
+private double max;
+private double min;
+
+   public  Pair(double aFirst, double bSecond){
+   // we didi this becaue we a and for les typint lower chance of mistake
+   a=aFirst;
+   b=bSecond;
+   }
+
+      public double getSum(){
+      // sum is adding of a and b
+      sum=a+b;
+      return sum;
+      
+    }
+         public double getDif(){
+         // dif is sbstraction of a and b
+         dif=a-b;
+         return dif; 
+   }
+   
+   
+         public double getProd(){
+         // prod is multiplying a to b
+         prod=a*b;
+         return prod;
+         } 
+   
+            public double getAvg(){
+            // avarge is substractio (a+b) and deviding by 2
+            // we must be carful becuse avg must be float or double
+            // because it have decimal point
+            avg=(a+b)/2;
+            return avg;
+            }
+            // we use Math.abs(a-b) to always get apsolut value of subtracing
+            public double getPos(){
+            pos=Math.abs(a-b);
+            return pos;
+            }
+            
+            
+            
+            // founction getMax() always get maximal nuner betwen a and b
+            //  this function comapre a and b
+            // and return biger nuber
+            public double getMax(){
+            max=Math.max(a,b);
+            return max;
+            
+            
+            
+            
+            }
+            // this functione do same job nut with minimal number
+            public double getMin(){
+            min=Math.min(a,b);
+            return min;
+            
+            
+
+}}
