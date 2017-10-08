@@ -1,0 +1,44 @@
+public class DataCalc{
+private int sum;
+private double avg;
+// we used this metod to compare lag to smalest number
+// becuse we used difrent logic
+private int lag=Integer.MIN_VALUE;
+// we used this metod to compare smal to smalest number
+// becuse we used difrent logic
+private int smal=Integer.MAX_VALUE;
+private int count;
+
+
+
+
+public void addValue(int x){
+sum=sum+x;
+lag=Math.max(lag,x);
+smal=Math.min(smal,x);
+count=count+1;
+
+
+
+
+}
+
+public int getSum(){
+return sum;
+}
+// we used (double) to get nymber with foul decimal point
+public double getAvg(){
+avg=(double)sum / (double) count;
+
+return avg;
+}
+public int getLag(){
+return lag;
+}
+public int getSmal(){
+return smal;
+}
+}
+
+
+
