@@ -1,0 +1,29 @@
+public class PairTester{
+
+    public static void main(String[] args) {
+    Pair tester = new Pair(-2,11);
+       
+        System.out.println("expected :9");
+        
+         System.out.println("diference: " +tester.getDif()); 
+          System.out.println(" expected -13.0");
+          
+           System.out.println("distance "+tester.getProd());
+            System.out.println("expectd -22");
+            
+            System.out.println("Avarage "+tester.getAvg());
+            System.out.println("expected 4.5");
+            
+            System.out.println("distance "+tester.getPos());
+            System.out.println("expected 13.0");
+            
+            System.out.println("MAXIMUM "+tester.getMax());
+            System.out.println("expected: 11");
+            
+            System.out.println("MINIMUM "+tester.getMin());
+            
+            System.out.println("EXPETED -2");
+    
+        
+    
+    }
