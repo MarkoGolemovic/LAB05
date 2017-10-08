@@ -1,0 +1,54 @@
+import java.util.*;
+
+   public class DataCalcTester{
+   public static void main( String[] args ){
+   // WE USED System.ini to activated scaner
+   Scanner upis = new Scanner(System.in);
+   DataCalc tester = new DataCalc();
+   System.out.println("First number:");
+   // we used upis.nextInt to have scaner for first number
+   tester.addValue(upis.nextInt());
+   System.out.println("Secund number:");
+   // we used upis.nextInt to have scaner for secund number
+   tester.addValue(upis.nextInt());
+   System.out.println("third number:");
+   //we used upis.nextInt to have scaner for third number
+   tester.addValue(upis.nextInt());
+   System.out.println("fourth number:");
+   // we used upis.nextInt to have scaner for fourt number number
+   tester.addValue(upis.nextInt());
+   
+      System.out.println("SUM"+tester.getSum());
+      System.out.println("expected 14");
+
+      System.out.println("AVERAGE"+tester.getAvg());
+      System.out.println("EXPETED 3.5");
+
+      System.out.println("Largest"+tester.getLag());
+      System.out.println("Largest EXPETED 13");
+
+      System.out.println("Smalest"+tester.getSmal());
+      System.out.println("SMALEST EXPETED -2");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+}
